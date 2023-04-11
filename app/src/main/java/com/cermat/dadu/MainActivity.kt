@@ -15,6 +15,16 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener { rollDice() }
     }
 
+    fun SetIdentity(){
+        val nama: TextView = findViewById(R.id.nama)
+        val nim: TextView = findViewById(R.id.nim)
+        val kelas: TextView = findViewById(R.id.kelas)
+
+        nama.text = "Melani Putri Maharani"
+        nim.text = "223307075"
+        kelas.text = "2C"
+    }
+
     private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
